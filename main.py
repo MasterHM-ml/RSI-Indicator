@@ -69,9 +69,9 @@ class RSI_Screener:
 if __name__=="__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--token-name", type=str,
+    parser.add_argument("--token-name", type=str, default="BTCUSDT,",
                         help="A list of token name from Binance market e.g. 'BTCUSDT,ETHUSDT,BNBUSDT' or 'BTCUSDT'")
-    parser.add_argument("--interval", type=str, help="candle stick interval from "
+    parser.add_argument("--interval", type=str, default="3m", help="candle stick interval from "
                         " 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d,")
     parser.add_argument("--rsi-lower", type=int, default=15, help="Lower RSI indication, 15 by default")
     parser.add_argument("--rsi-upper", type=int, default=85, help="High RSI indication, 85 by default")
