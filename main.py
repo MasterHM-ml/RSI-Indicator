@@ -9,11 +9,8 @@ from tqdm import tqdm
 from tqdm.contrib.logging import logging_redirect_tqdm
 
 
-
-
 class RSI_Screener:
     def __init__(self,):
-
         
         self.log_directory=os.path.join('logs', f'{datetime.datetime.now().date()}')
         if not os.path.exists(self.log_directory):
@@ -23,25 +20,16 @@ class RSI_Screener:
         else:
             _files=os.listdir(self.log_directory)
             _files.sort(key=lambda x: int(x.split('.')[0]))
-            self.log_file_title_index = int(_files[-1].split(".")[0])+1
-
-        logging.root.handlers = []
-
-        formatter = logging.Formatter('%(asctime)s.%(msecs)03d [%(filename)s:%(lineno)d] [%(levelname)s] %(message)s',
-                                    datefmt='%Y-%m-%d %H:%M:%S')
-
-        file_handler = logging.FileHandler(os.path.join(self.log_directory, f'{self.log_file_title_index}.txt'), 'w')
-        file_handler.setLevel(logging.DEBUG)
-        file_handler.setFormatter(formatter)
-
-        console_handler = logging.StreamHandler()
-        console_handler.setLevel(logging.CRITICAL)
-        console_handler.setFormatter(formatter)
-
-        self.log = logging.getLogger('RSI-Screener')
-        self.log.addHandler(console_handler)
-        self.log.addHandler(file_handler)
-        self.log.setLevel(logging.DEBUG)
+            self.log_file_title_index = int(_files[-1].split('.')[0])+1
+        logging.root.handlers=[]
+        logging.basicConfig(level=logging.INFO,
+                            format='%(asctime)s.%(msecs)03d [%(filename)s:%(lineno)d] [%(levelname)s] %(message)s',
+                            datefmt='%Y-%m-%d %H:%M:%S',
+                            handlers=[
+                                 logging.FileHandler(os.path.join(self.log_directory, f'{self.log_file_title_index}.txt'), 'w'),
+                                 logging.StreamHandler()
+                            ])
+        self.log = logging.getLogger('TradeSignals')
 
 
         self.limit = 100
@@ -100,6 +88,6 @@ if __name__=="__main__":
                 transfer_data = {"TokenName": token_name,
                                 "CandleStartTimeInUTC-00:00": data.iloc[-1].name,
                                 "RSI": extreme_rsi}
-                rsi_screener.log.critical(transfer_data)
+                rsi_screener.log.info(transfer_data)
 
 
