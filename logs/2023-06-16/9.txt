@@ -1,0 +1,10 @@
+2023-06-16 11:04:01.564 [main.py:68] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m&limit=100
+2023-06-16 11:04:02.776 [main.py:76] [DEBUG] Returning data frame with (100, 4) shape
+2023-06-16 11:04:02.814 [main.py:68] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=5m&limit=100
+2023-06-16 11:04:04.102 [main.py:76] [DEBUG] Returning data frame with (100, 4) shape
+2023-06-16 11:04:04.140 [main.py:68] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=5m&limit=100
+2023-06-16 11:04:05.061 [main.py:76] [DEBUG] Returning data frame with (100, 4) shape
+2023-06-16 11:04:05.116 [main.py:68] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=5m&limit=100
+2023-06-16 11:04:06.044 [main.py:76] [DEBUG] Returning data frame with (100, 4) shape
+2023-06-16 11:04:06.067 [main.py:68] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=SUIUSDT&interval=5m&limit=100
+2023-06-16 11:04:06.722 [main.py:76] [DEBUG] Returning data frame with (100, 4) shape
