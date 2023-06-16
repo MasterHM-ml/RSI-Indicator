@@ -22,7 +22,7 @@ class RSI_Screener:
             _files.sort(key=lambda x: int(x.split('.')[0]))
             self.log_file_title_index = int(_files[-1].split('.')[0])+1
         logging.root.handlers=[]
-        logging.basicConfig(level=logging.INFO,
+        logging.basicConfig(level=logging.DEBUG,
                             format='%(asctime)s.%(msecs)03d [%(filename)s:%(lineno)d] [%(levelname)s] %(message)s',
                             datefmt='%Y-%m-%d %H:%M:%S',
                             handlers=[
@@ -34,7 +34,7 @@ class RSI_Screener:
 
         self.limit = 100
         self.raw_columns = ["Timestamp", "Open", "High", "Low", "Close", "Volume",  "Close time",	"Quote asset volume",	"Number of trades",	"Taker buy base asset volume",	"Taker buy quote asset volume",	"Ignore"]
-        self.col_to_remove = ["Timestamp", "Volume",  "Close time",	"Quote asset volume",	"Number of trades",	"Taker buy base asset volume",	"Taker buy quote asset volume",	"Ignore"]
+        self.col_to_remove = ["Timestamp", "Open", "High", "Low", "Volume",  "Close time",	"Quote asset volume",	"Number of trades",	"Taker buy base asset volume",	"Taker buy quote asset volume",	"Ignore"]
 
     #calculation of relative strength index
     def RSI(self, data, period):
@@ -69,7 +69,7 @@ class RSI_Screener:
 if __name__=="__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--token-name", type=str, default="BTCUSDT,",
+    parser.add_argument("--token-name", type=str, default="BTCUSDT,ETHUSDT,XRPUSDT,MATICUSDT,SUIUSDT",
                         help="A list of token name from Binance market e.g. 'BTCUSDT,ETHUSDT,BNBUSDT' or 'BTCUSDT'")
     parser.add_argument("--interval", type=str, default="3m", help="candle stick interval from "
                         " 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d,")

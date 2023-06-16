@@ -1,6 +1,6 @@
 # RSI-Indicator
 
-RSI indicator for any cryptocurrency
+RSI indicator for any cryptocurrency over it **Close** price.
 
 ## Usage
 
