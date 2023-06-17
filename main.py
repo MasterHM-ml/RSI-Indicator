@@ -31,10 +31,10 @@ class RSI_Screener:
                             ])
         self.log = logging.getLogger('TradeSignals')
 
-
-        self.limit = 100
+        self.limit = 50
         self.raw_columns = ["Timestamp", "Open", "High", "Low", "Close", "Volume",  "Close time",	"Quote asset volume",	"Number of trades",	"Taker buy base asset volume",	"Taker buy quote asset volume",	"Ignore"]
         self.col_to_remove = ["Timestamp", "Open", "High", "Low", "Volume",  "Close time",	"Quote asset volume",	"Number of trades",	"Taker buy base asset volume",	"Taker buy quote asset volume",	"Ignore"]
+
 
     #calculation of relative strength index
     def RSI(self, data, period):
