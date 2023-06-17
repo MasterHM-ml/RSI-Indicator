@@ -1,0 +1,25 @@
+2023-06-17 12:54:48.484 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m&limit=50
+2023-06-17 12:54:48.494 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:54:49.656 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=5m&limit=50 HTTP/1.1" 200 2668
+2023-06-17 12:54:49.865 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:54:49.992 [main.py:95] [INFO] {'TokenName': 'BTCUSDT', 'CandleStartTimeInUTC-00:00': Timestamp('2023-06-17 07:50:00+0000', tz='UTC'), 'RSI': 27.445147682535193}
+2023-06-17 12:54:49.997 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=5m&limit=50
+2023-06-17 12:54:50.007 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:54:50.880 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=ETHUSDT&interval=5m&limit=50 HTTP/1.1" 200 2491
+2023-06-17 12:54:50.896 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:54:50.931 [main.py:95] [INFO] {'TokenName': 'ETHUSDT', 'CandleStartTimeInUTC-00:00': Timestamp('2023-06-17 07:50:00+0000', tz='UTC'), 'RSI': 27.268793782005673}
+2023-06-17 12:54:50.934 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=5m&limit=50
+2023-06-17 12:54:50.944 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:54:51.590 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=XRPUSDT&interval=5m&limit=50 HTTP/1.1" 200 2090
+2023-06-17 12:54:51.607 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:54:51.651 [main.py:95] [INFO] {'TokenName': 'XRPUSDT', 'CandleStartTimeInUTC-00:00': Timestamp('2023-06-17 07:50:00+0000', tz='UTC'), 'RSI': 41.89325671389652}
+2023-06-17 12:54:51.653 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=5m&limit=50
+2023-06-17 12:54:51.662 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:54:52.519 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=MATICUSDT&interval=5m&limit=50 HTTP/1.1" 200 2228
+2023-06-17 12:54:52.537 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:54:52.588 [main.py:95] [INFO] {'TokenName': 'MATICUSDT', 'CandleStartTimeInUTC-00:00': Timestamp('2023-06-17 07:50:00+0000', tz='UTC'), 'RSI': 33.664336291378476}
+2023-06-17 12:54:52.591 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=SUIUSDT&interval=5m&limit=50
+2023-06-17 12:54:52.603 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:54:53.337 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=SUIUSDT&interval=5m&limit=50 HTTP/1.1" 200 2241
+2023-06-17 12:54:53.355 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:54:53.404 [main.py:95] [INFO] {'TokenName': 'SUIUSDT', 'CandleStartTimeInUTC-00:00': Timestamp('2023-06-17 07:50:00+0000', tz='UTC'), 'RSI': 66.6311486675828}

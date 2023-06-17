@@ -1,0 +1,5 @@
+2023-06-17 12:59:36.028 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m&limit=50
+2023-06-17 12:59:36.089 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:59:37.053 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=5m&limit=50 HTTP/1.1" 200 2679
+2023-06-17 12:59:37.136 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:59:37.266 [main.py:95] [INFO] {'TokenName': 'BTCUSDT', 'CandleStartTimeInUTC-00:00': Timestamp('2023-06-17 07:55:00+0000', tz='UTC'), 'RSI': 28.43091917178336}

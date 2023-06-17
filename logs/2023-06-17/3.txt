@@ -1,0 +1,20 @@
+2023-06-17 12:55:48.972 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=3m&limit=50
+2023-06-17 12:55:49.029 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:55:50.538 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=3m&limit=50 HTTP/1.1" 200 2646
+2023-06-17 12:55:50.630 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:55:50.755 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=3m&limit=50
+2023-06-17 12:55:50.782 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:55:51.558 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=ETHUSDT&interval=3m&limit=50 HTTP/1.1" 200 2524
+2023-06-17 12:55:51.608 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:55:51.707 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=3m&limit=50
+2023-06-17 12:55:51.733 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:55:52.677 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=XRPUSDT&interval=3m&limit=50 HTTP/1.1" 200 2102
+2023-06-17 12:55:52.727 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:55:52.817 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=3m&limit=50
+2023-06-17 12:55:52.845 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:55:53.860 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=MATICUSDT&interval=3m&limit=50 HTTP/1.1" 200 2252
+2023-06-17 12:55:53.897 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape
+2023-06-17 12:55:53.991 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol=SUIUSDT&interval=3m&limit=50
+2023-06-17 12:55:54.013 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:55:54.782 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol=SUIUSDT&interval=3m&limit=50 HTTP/1.1" 200 2237
+2023-06-17 12:55:54.807 [main.py:68] [DEBUG] Returning data frame with (50, 1) shape

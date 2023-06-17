@@ -1,0 +1,3 @@
+2023-06-17 12:58:10.065 [main.py:60] [DEBUG] getting data from https://api.binance.com/api/v3/klines?symbol='BTCUSDT'&interval=5m&limit=50
+2023-06-17 12:58:10.119 [connectionpool.py:973] [DEBUG] Starting new HTTPS connection (1): api.binance.com:443
+2023-06-17 12:58:12.416 [connectionpool.py:452] [DEBUG] https://api.binance.com:443 "GET /api/v3/klines?symbol='BTCUSDT'&interval=5m&limit=50 HTTP/1.1" 400 108
